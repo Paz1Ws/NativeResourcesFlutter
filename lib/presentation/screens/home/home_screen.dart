@@ -7,23 +7,25 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverAppBar(
-          title: const Text('Miscelaneos'),
-          actions: [
-            IconButton(
-                onPressed: () {
-                  context.push('/permissions');
-                },
-                icon: const Icon(Icons.settings))
-          ],
-        ),
-        const SliverToBoxAdapter(
-          child: SizedBox(height: 10),
-        ),
-        const MainMenu(),
-      ],
+    return Center(
+      child: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            title: const Text('Miscelaneos'),
+            actions: [
+              IconButton(
+                  onPressed: () {
+                    context.push('/permissions');
+                  },
+                  icon: const Icon(Icons.settings))
+            ],
+          ),
+          const SliverToBoxAdapter(
+            child: SizedBox(height: 10),
+          ),
+          const MainMenu(),
+        ],
+      ),
     );
   }
 }
