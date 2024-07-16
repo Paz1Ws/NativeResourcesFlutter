@@ -28,15 +28,15 @@ final router = GoRouter(routes: [
        builder: (context, state) => const MagnetometerScreen(),
     ),
 
-    // GoRoute(
-    //   path: '/gyroscope-ball',
-    //   builder: (context, state) => const GyroscopeBallScreen(),
-    // ),
+    GoRoute(
+      path: '/gyroscope-ball',
+      builder: (context, state) => const GyroscopeBallScreen(),
+    ),
 
-    // GoRoute(
-    //   path: '/compass',
-    //   // builder: (context, state) => const CompassScreen(),
-    // ),
+    GoRoute(
+      path: '/compass',
+       builder: (context, state) => const CompassScreen(),
+    ),
 
 
 

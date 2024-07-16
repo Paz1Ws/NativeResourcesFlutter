@@ -53,7 +53,7 @@ class MovingBall extends StatelessWidget {
         AnimatedPositioned(
           left: (currentYPos - 25) + ( screenWidth / 2 ),
           top: (currentXPos - 25) + ( screenHeight / 2 ),
-          curve: Curves.easeInOut, 
+          curve: Curves.bounceInOut, 
           duration: const Duration(milliseconds: 1000),
           child: const Ball()
         ),
