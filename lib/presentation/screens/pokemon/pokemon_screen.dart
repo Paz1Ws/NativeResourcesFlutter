@@ -38,17 +38,18 @@ class _PokemonView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text( pokemon.name ),
+        title: Text( pokemon.name.toString() ),
         actions: [
           IconButton(onPressed: () {
             // Link = Deeplink
-            SharePlugin.shareLink(pokemon.spriteFront, 'Mira este pókmeon');
+            SharePlugin.shareLink("https://deeplink-project.up.railway.app/pokemons/5/", 
+            'Mira este pokemon');
           }, icon: const Icon( Icons.share_outlined))
         ],
       ),
       body: Center(
         child: Image.network(
-          pokemon.spriteFront,
+          pokemon.spriteFront.toString(),
           fit: BoxFit.contain,
           width: 150,
           height: 150,

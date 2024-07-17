@@ -77,10 +77,7 @@ class _CompassState extends State<Compass> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // Text('${widget.heading.ceil()}', style: const TextStyle(color: Colors.white, fontSize: 30)),
-
-        // const SizedBox(height: 20),
-
+       
         Stack(
           alignment: Alignment.center,
           children: [

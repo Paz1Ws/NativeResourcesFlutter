@@ -12,11 +12,11 @@ class AskLocationScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Permiso Requerido'),
+        title: const Text('Required Permission'),
       ),
       body: Center(
         child: FilledButton(
-          child: const Text('Localización necesaria'),
+          child: const Text('Location Permission'),
           onPressed: () {
 
             ref.read( permissionsProvider.notifier )

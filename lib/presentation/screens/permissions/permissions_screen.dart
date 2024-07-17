@@ -11,7 +11,7 @@ class PermissionsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Permisos'),
+        title: const Text('Permissions'),
       ),
       body: const _PermissionsView(),
     );
@@ -33,7 +33,7 @@ class _PermissionsView extends ConsumerWidget {
 
         CheckboxListTile(
           value: permissions.cameraGranted, 
-          title: const Text('Cámara'),
+          title: const Text('Camera'),
           subtitle: Text('${ permissions.camera }'),
           onChanged: ( _ ) {
   ref.read(permissionsProvider.notifier).requestCameraAccess(); 
@@ -42,7 +42,7 @@ class _PermissionsView extends ConsumerWidget {
 
         CheckboxListTile(
           value: permissions.photoLibraryGranted, 
-          title: const Text('Galería de fotos'),
+          title: const Text('Photos Galery'),
           subtitle: Text('${ permissions.photoLibrary }'),
           onChanged: ( _ ) {
                        ref.read(permissionsProvider.notifier).requestPhotoLibraryAccess(); 

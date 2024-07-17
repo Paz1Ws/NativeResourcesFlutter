@@ -10,13 +10,20 @@ class MenuItem {
 }
 
 final menuItems = <MenuItem>[
-  MenuItem('Giróscopio', Icons.downloading, '/gyroscope'),
-  MenuItem('Acelerómetro', Icons.speed, '/accelerometer'),
-  MenuItem('Magnetometro', Icons.explore_outlined, '/magnetometer'),
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3784141589.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3013268335.
+  MenuItem('Gyroscope', Icons.downloading, '/gyroscope'),
+  MenuItem('Accelerometer', Icons.speed, '/accelerometer'),
+  MenuItem('Magnetometer', Icons.explore_outlined, '/magnetometer'),
   MenuItem(
-      'Giróscopio Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
-  MenuItem('Brújula', Icons.explore, '/compass'),
-  MenuItem('Pokemons', Icons.stars, '/pokemons')
+      'Gyroscope Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
+  MenuItem('Compass', Icons.explore, '/compass'),
+  MenuItem('Pokemons', Icons.stars, '/pokemons'),
+  MenuItem('Biometrics', Icons.fingerprint, '/biometrics'),
+    MenuItem('Ubication', Icons.pin_drop, '/location'),
+  MenuItem('Maps', Icons.map_outlined, '/maps'),
+  MenuItem('Controlled', Icons.gamepad_outlined, '/controlled-map'),
+
 ];
 
 class MainMenu extends StatelessWidget {

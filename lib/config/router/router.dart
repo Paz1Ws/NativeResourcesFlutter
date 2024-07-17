@@ -1,7 +1,10 @@
 import 'package:go_router/go_router.dart';
+import 'package:myapp/presentation/screens/biometric/digital_sensor.dart';
+import 'package:myapp/presentation/screens/location/controlled_map.dart';
+import 'package:myapp/presentation/screens/location/maps_screen.dart';
 import 'package:myapp/presentation/screens/pokemon/pokemon_screen.dart';
 import 'package:myapp/presentation/screens/pokemon/pokemon_view_screen.dart';
-
+import '../../presentation/screens/location/location_screen.dart';
 import '../../presentation/screens/screens.dart';
 
 final router = GoRouter(routes: [
@@ -53,6 +56,21 @@ final router = GoRouter(routes: [
         ),
         
       ]
+    ),
+      GoRoute(
+      path: '/biometrics',
+      builder: (context, state) => const BiometricScreen(),
+    ), GoRoute(
+      path: '/location',
+      builder: (context, state) => const LocationScreen(),
+    ),
+    GoRoute(
+      path: '/maps',
+      builder: (context, state) => const MapScreen(),
+    ),
+    GoRoute(
+      path: '/controlled-map',
+      builder: (context, state) => const ControlledMapScreen(),
     ),
 
 
