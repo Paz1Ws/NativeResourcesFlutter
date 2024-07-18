@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myapp/config/plugins/quick_Actions.dart';
 import 'package:myapp/config/theme/theme.dart';
 
 import 'config/router/router.dart';
@@ -7,6 +8,7 @@ import 'presentation/providers/providers.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  QuickActionsPlugin.registerActions();
   runApp(const ProviderScope(child: MainApp()));
 }
 
@@ -35,7 +37,7 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     print("State: $state");
-       ref.read( appStateProvider.notifier ).state = state;
+    ref.read(appStateProvider.notifier).state = state;
     if (state == AppLifecycleState.resumed) {
       //    ref.read( permissionsProvider.notifier ).checkPermissions();
     }

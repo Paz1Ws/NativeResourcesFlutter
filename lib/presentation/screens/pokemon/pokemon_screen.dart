@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../domain/entities/pokemon.dart';
-import '../../../plugin/share_plus.dart';
+import '../../../config/plugins/share_plus.dart';
 import '../../providers/pokemon/pokemon_provider.dart';
 
 

@@ -15,14 +15,16 @@ final menuItems = <MenuItem>[
   MenuItem('Gyroscope', Icons.downloading, '/gyroscope'),
   MenuItem('Accelerometer', Icons.speed, '/accelerometer'),
   MenuItem('Magnetometer', Icons.explore_outlined, '/magnetometer'),
-  MenuItem(
-      'Gyroscope Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
+  MenuItem('Gyroscope Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Compass', Icons.explore, '/compass'),
   MenuItem('Pokemons', Icons.stars, '/pokemons'),
   MenuItem('Biometrics', Icons.fingerprint, '/biometrics'),
-    MenuItem('Ubication', Icons.pin_drop, '/location'),
+  MenuItem('Ubication', Icons.pin_drop, '/location'),
   MenuItem('Maps', Icons.map_outlined, '/maps'),
   MenuItem('Controlled', Icons.gamepad_outlined, '/controlled-map'),
+  MenuItem('Badge', Icons.notification_important, '/badge'),
+  MenuItem('Ad Full', Icons.ad_units_rounded, '/ad-fullscreen'),
+  MenuItem('Ad Reward', Icons.fort_sharp, '/ad-rewarded'),
 
 ];
 

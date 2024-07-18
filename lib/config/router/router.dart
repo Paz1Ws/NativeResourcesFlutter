@@ -1,4 +1,7 @@
 import 'package:go_router/go_router.dart';
+import 'package:myapp/presentation/screens/ads/ads_full_screen.dart';
+import 'package:myapp/presentation/screens/ads/ads_rewarded_screen.dart';
+import 'package:myapp/presentation/screens/badge/badge_screen.dart';
 import 'package:myapp/presentation/screens/biometric/digital_sensor.dart';
 import 'package:myapp/presentation/screens/location/controlled_map.dart';
 import 'package:myapp/presentation/screens/location/maps_screen.dart';
@@ -72,6 +75,18 @@ final router = GoRouter(routes: [
       path: '/controlled-map',
       builder: (context, state) => const ControlledMapScreen(),
     ),
-
+  GoRoute(
+      path: '/badge',
+      builder: (context, state) => const BadgeScreen(),
+    ),
+      GoRoute(
+      path: '/ad-fullscreen',
+      builder: (context, state) => const AdFullScreen(),
+    ),
+    
+    GoRoute(
+      path: '/ad-rewarded',
+      builder: (context, state) => const AdRewardedScreen(),
+    ),
 
 ]);
