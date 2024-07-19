@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:myapp/config/plugins/quick_Actions.dart';
 import 'package:myapp/config/theme/theme.dart';
+import 'package:workmanager/workmanager.dart';
 
 import 'config/router/router.dart';
 import 'presentation/providers/providers.dart';
+import 'workmanager/callback_dispatcher.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   QuickActionsPlugin.registerActions();
+   Workmanager().initialize(
+    callbackDispatcher, // Make sure callbackDispatcher is correctly imported
+  );
   runApp(const ProviderScope(child: MainApp()));
 }
 

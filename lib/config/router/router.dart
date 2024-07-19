@@ -8,6 +8,7 @@ import 'package:myapp/presentation/screens/location/maps_screen.dart';
 import 'package:myapp/presentation/screens/pokemon/pokemon_screen.dart';
 import 'package:myapp/presentation/screens/pokemon/pokemon_view_screen.dart';
 import '../../presentation/screens/location/location_screen.dart';
+import '../../presentation/screens/pokemon/db_pokemons_screen.dart';
 import '../../presentation/screens/screens.dart';
 
 final router = GoRouter(routes: [
@@ -59,6 +60,10 @@ final router = GoRouter(routes: [
         ),
         
       ]
+    ),
+     GoRoute(
+      path: '/db-pokemons', 
+      builder: (context, state) => const DbPokemonsScreen(),
     ),
       GoRoute(
       path: '/biometrics',

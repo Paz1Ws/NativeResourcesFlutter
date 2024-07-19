@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -18,6 +20,7 @@ final menuItems = <MenuItem>[
   MenuItem('Gyroscope Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Compass', Icons.explore, '/compass'),
   MenuItem('Pokemons', Icons.stars, '/pokemons'),
+  MenuItem('Background Process', Icons.storage_rounded, '/db-pokemons'),
   MenuItem('Biometrics', Icons.fingerprint, '/biometrics'),
   MenuItem('Ubication', Icons.pin_drop, '/location'),
   MenuItem('Maps', Icons.map_outlined, '/maps'),
@@ -25,7 +28,6 @@ final menuItems = <MenuItem>[
   MenuItem('Badge', Icons.notification_important, '/badge'),
   MenuItem('Ad Full', Icons.ad_units_rounded, '/ad-fullscreen'),
   MenuItem('Ad Reward', Icons.fort_sharp, '/ad-rewarded'),
-
 ];
 
 class MainMenu extends StatelessWidget {
@@ -39,8 +41,10 @@ class MainMenu extends StatelessWidget {
       crossAxisSpacing: 20,
       mainAxisSpacing: 15,
       children: menuItems
-          .map((item) => HomeMenuItem(
-              title: item.title, route: item.route, icon: item.icon))
+          .map((item) => HomeMenuItem(bgColors: [
+                Colors.primaries[Random().nextInt(Colors.primaries.length)],
+                Colors.primaries[Random().nextInt(Colors.primaries.length)]
+              ], title: item.title, route: item.route, icon: item.icon))
           .toList(),
     );
   }
@@ -52,12 +56,13 @@ class HomeMenuItem extends StatelessWidget {
   final IconData icon;
   final List<Color> bgColors;
 
-  const HomeMenuItem(
-      {super.key,
-      required this.title,
-      required this.route,
-      required this.icon,
-      this.bgColors = const [Colors.lightBlue, Colors.blue]});
+  const HomeMenuItem({
+    super.key,
+    required this.title,
+    required this.route,
+    required this.icon,
+    required this.bgColors,
+  });
 
   @override
   Widget build(BuildContext context) {

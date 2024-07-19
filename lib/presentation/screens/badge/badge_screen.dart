@@ -33,7 +33,7 @@ class BadgeScreen extends ConsumerWidget {
               onPressed: (){
                   ref.invalidate(badgeCounterProvider);
                   AppBadgePlugin.removeBadge();
-              }, child: const Text('Borrar Badge'))
+              }, child: const Text('Delete Badge'))
 
           ],
         ),

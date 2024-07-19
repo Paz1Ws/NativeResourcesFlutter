@@ -81,17 +81,11 @@ class _CompassState extends State<Compass> {
         Stack(
           alignment: Alignment.center,
           children: [
-            Image.asset('assets/images/compass/quadrant-1.png'),
             Transform.rotate(
               angle: (widget.heading * (pi / 180) * -1),
               child: Image.asset('assets/images/needle-5.png'),
             ),
-            AnimatedRotation(
-              curve: Curves.easeOut,
-              turns: getTurns(),
-              duration: const Duration(seconds: 1),
-              child: Image.asset('assets/images/needle-5.png'),
-            ),
+            
             AnimatedRotation(
               curve: Curves.easeOut,
               turns: getTurns(),
