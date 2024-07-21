@@ -1,16 +1,25 @@
-# myapp
+Funcionalidades:
 
-A new Flutter project.
+Sensores: Accede a los datos del giroscopio, acelerómetro, magnetómetro, alamacenamiento e ubicación y más para crear experiencias interactivas.
+Autenticación Biométrica: Aprovecha la seguridad biométrica del dispositivo para proteger el acceso a la app.
+Ubicación y Mapas: Integra mapas interactivos con Google Maps y muestra tu ubicación actual.
+Notificaciones: Envía alertas y actualizaciones a los usuarios a través de notificaciones push.
+Monetización: Genera ingresos con anuncios recompensados o anuncios regulares de Google AdMob.
+Quick Actions y Deep Linking: Facilita el acceso a funciones específicas de la app desde la pantalla de inicio o mediante enlaces externos.
+Ejemplo de API de Pokédex: Integra una conexión a la API de Pokédex para mostrar información sobre Pokémon y compartirla mediante deep linking.
 
-## Getting Started
+Plataformas:
 
-This project is a starting point for a Flutter application.
+Android
+iOS
 
-A few resources to get you started if this is your first Flutter project:
+Tecnologías:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter
+Google Maps
+Google AdMob
+Quick Actions
+Deep Linking
+API de Pokédex
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Video Demostrativo:
